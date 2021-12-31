@@ -62,7 +62,9 @@ def pprint(art,time):
         print(colored(replaceMultiple(art[i],colorCodes,''),random.choice(color_used),attrs=colorAttribute),sep='', end='',flush= True);sleep(time)
 
 def pAudio():
-    i=6
+    file = "HappyBirthday.mp3"
+    print('playing sound using native player')
+    os.system("afplay " + file)
     
 # Code reader
 with open(resource_path(__file__)) as f_in:
